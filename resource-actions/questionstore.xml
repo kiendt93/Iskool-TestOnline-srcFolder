@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<resource-action-mapping>
+	<portlet-resource>
+	    <portlet-name>question-store</portlet-name>
+	    <permissions>
+	        <supports>
+	            <action-key>ADD_TO_PAGE</action-key>
+	            <action-key>CONFIGURATION</action-key>
+	            <action-key>VIEW</action-key>
+	        </supports>
+	        <site-member-defaults>
+	            <action-key>VIEW</action-key>
+	        </site-member-defaults>
+	        <guest-defaults>
+	            <action-key>VIEW</action-key>
+	        </guest-defaults>
+	        <guest-unsupported />
+	    </permissions>
+    </portlet-resource>
+    <model-resource>
+    	<model-name>com.vietnamobile.model.QuestionEntry</model-name>
+    	<portlet-ref>
+    		<portlet-name>question-store</portlet-name>
+    	</portlet-ref>
+	    <permissions>
+	        <supports>
+	            <action-key>CREATE_QUESTION</action-key>
+	           	<action-key>DELETE</action-key>
+	           	<action-key>UPDATE</action-key>
+	           	<action-key>VIEW</action-key>
+	        </supports>
+	        <site-member-defaults>
+	        </site-member-defaults>
+	        <guest-defaults>
+	        </guest-defaults>
+	        <guest-unsupported />	        
+	    </permissions>    	
+    </model-resource>
+     <model-resource>
+    	<model-name>com.vietnamobile.model.OnlinetestEntry</model-name>
+    	<portlet-ref>
+    		<portlet-name>question-store</portlet-name>
+    	</portlet-ref>
+	    <permissions>
+	        <supports>
+	            <action-key>CREATE_TESTONLINE</action-key>
+	            <action-key>EXPORT_RESULT</action-key>         
+	           	<action-key>DELETE</action-key>
+	           	<action-key>UPDATE</action-key>
+	        </supports>
+	        <site-member-defaults>
+	        </site-member-defaults>
+	        <guest-defaults>
+	        </guest-defaults>
+	        <guest-unsupported />		        
+	    </permissions>    	
+    </model-resource>
+     <model-resource>
+    	<model-name>com.vietnamobile.model.SubjectEntry</model-name>
+    	<portlet-ref>
+    		<portlet-name>question-store</portlet-name>
+    	</portlet-ref>
+	    <permissions>
+	        <supports>
+	            <action-key>CREATE_SUBJECT</action-key>
+	           	<action-key>DELETE</action-key>
+	           	<action-key>UPDATE</action-key>
+	        </supports>
+	        <site-member-defaults>
+	        </site-member-defaults>
+	        <guest-defaults>
+	        </guest-defaults>
+	        <guest-unsupported />		        
+	    </permissions>    	
+    </model-resource>  
+</resource-action-mapping>

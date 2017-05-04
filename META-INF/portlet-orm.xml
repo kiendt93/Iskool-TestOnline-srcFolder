@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.vietnamobile.model.impl.OnlinetestEntryModelImpl">
+		<attributes>
+			<id name="onlinetestEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="questionId" />
+			<basic name="testStartTime">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="testEndTime">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="duration" />
+			<basic name="numberOfQuestions" />
+			<basic name="title" />
+			<basic name="point" />
+			<basic name="status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.vietnamobile.model.impl.OnlinetestResultEntryModelImpl">
+		<attributes>
+			<id name="onlinetestResultEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="onlineTestEntryId" />
+			<basic name="score" />
+			<basic name="answerSelected" />
+			<basic name="numberOfWrongAnswer" />
+			<basic name="timeRemaining" />
+			<basic name="examType" />
+			<basic name="questionIds" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.vietnamobile.model.impl.QuestionEntryModelImpl">
+		<attributes>
+			<id name="questionEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="subject" />
+			<basic name="levelQuestion" />
+			<basic name="answer" />
+			<basic name="score" />
+			<basic name="questionContent" />
+			<basic name="a" />
+			<basic name="b" />
+			<basic name="c" />
+			<basic name="d" />
+			<basic name="title" />
+			<basic name="selection1" />
+			<basic name="selection2" />
+			<basic name="selection3" />
+			<basic name="selection4" />
+			<basic name="typeExam" />
+			<basic name="inExam" />
+			<basic name="status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.vietnamobile.model.impl.SubjectEntryModelImpl">
+		<attributes>
+			<id name="subjectEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="course" />
+			<basic name="subject" />
+			<basic name="description" />
+			<basic name="examType" />
+			<basic name="totalQuestion" />
+			<basic name="status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.vietnamobile.model.impl.VnmArticleReportEntryModelImpl">
+		<attributes>
+			<id name="vnmArticleReportEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="articleId" />
+			<basic name="version" />
+			<basic name="title" />
+			<basic name="action" />
+			<basic name="status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.vietnamobile.model.impl.VnmOnlintestReportEntryModelImpl">
+		<attributes>
+			<id name="vnmOnlintestReportEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="onlinetestEntryId" />
+			<basic name="questionEntryId" />
+			<basic name="correctTime" />
+			<basic name="wrongTime" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.vietnamobile.model.impl.OnlinetestEntryImpl" name="OnlinetestEntry">
+		<table name="iskools_OnlinetestEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.vietnamobile.model.impl.OnlinetestResultEntryImpl" name="OnlinetestResultEntry">
+		<table name="iskools_OnlinetestResultEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.vietnamobile.model.impl.QuestionEntryImpl" name="QuestionEntry">
+		<table name="iskools_QuestionEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.vietnamobile.model.impl.SubjectEntryImpl" name="SubjectEntry">
+		<table name="iskools_SubjectEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.vietnamobile.model.impl.VnmArticleReportEntryImpl" name="VnmArticleReportEntry">
+		<table name="iskools_VnmArticleReportEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.vietnamobile.model.impl.VnmOnlintestReportEntryImpl" name="VnmOnlintestReportEntry">
+		<table name="iskools_VnmOnlintestReportEntry" />
+		<attributes />
+	</entity>
+</entity-mappings>

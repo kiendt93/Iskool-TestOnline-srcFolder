@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE routes PUBLIC "-//Liferay//DTD Friendly URL Routes 6.2.0//EN"
+"http://www.liferay.com/dtd/liferay-friendly-url-routes_6_2_0.dtd">
+
+<routes>
+    <route>
+        <pattern>/{jspPageName}</pattern>
+        <generated-parameter name="mvcPath">/html/questionstore/{jspPageName}.jsp</generated-parameter>
+    </route>
+    <route>
+	  	<pattern>/action/addQuestion</pattern>
+		<generated-parameter name="javax.portlet.action">addQuestion</generated-parameter>
+		<ignored-parameter name="p_auth"/>
+		<ignored-parameter name="p_p_id"/>
+		<implicit-parameter name="p_p_lifecycle">1</implicit-parameter>
+		<implicit-parameter name="p_p_state">normal</implicit-parameter>
+		<implicit-parameter name="p_p_mode">view</implicit-parameter>
+    </route>
+    <route>
+	  	<pattern>/action/updateQuestion</pattern>
+		<generated-parameter name="javax.portlet.action">updateQuestion</generated-parameter>
+		<ignored-parameter name="p_auth"/>
+		<ignored-parameter name="p_p_id"/>
+		<implicit-parameter name="p_p_lifecycle">1</implicit-parameter>
+		<implicit-parameter name="p_p_state">normal</implicit-parameter>
+		<implicit-parameter name="p_p_mode">view</implicit-parameter>
+    </route>
+    <!-- <route>
+        <pattern>/{guestbookId}/add_entry</pattern>
+        <implicit-parameter name="mvcPath">/html/guestbook/edit_entry.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{entryId}/view_entry</pattern>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="mvcPath">/html/guestbook/view_entry.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{guestbookId}/view</pattern>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="mvcPath">/html/guestbook/view.jsp</implicit-parameter>
+    </route> -->
+</routes>

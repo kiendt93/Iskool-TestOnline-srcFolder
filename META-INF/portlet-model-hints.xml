@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.vietnamobile.model.OnlinetestEntry">
+		<field name="onlinetestEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="questionId" type="String" />
+		<field name="testStartTime" type="Date" />
+		<field name="testEndTime" type="Date" />
+		<field name="duration" type="int" />
+		<field name="numberOfQuestions" type="int" />
+		<field name="title" type="String" />
+		<field name="point" type="int" />
+		<field name="status" type="int" />
+	</model>
+	<model name="com.vietnamobile.model.OnlinetestResultEntry">
+		<field name="onlinetestResultEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="onlineTestEntryId" type="long" />
+		<field name="score" type="double" />
+		<field name="answerSelected" type="String" />
+		<field name="numberOfWrongAnswer" type="int" />
+		<field name="timeRemaining" type="int" />
+		<field name="examType" type="String" />
+		<field name="questionIds" type="String" />
+	</model>
+	<model name="com.vietnamobile.model.QuestionEntry">
+		<field name="questionEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="subject" type="String" />
+		<field name="levelQuestion" type="int" />
+		<field name="answer" type="String" />
+		<field name="score" type="double" />
+		<field name="questionContent" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="a" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="b" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="c" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="d" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="title" type="String" />
+		<field name="selection1" type="String" />
+		<field name="selection2" type="String" />
+		<field name="selection3" type="String" />
+		<field name="selection4" type="String" />
+		<field name="typeExam" type="String" />
+		<field name="inExam" type="int" />
+		<field name="status" type="int" />
+	</model>
+	<model name="com.vietnamobile.model.SubjectEntry">
+		<field name="subjectEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="course" type="String" />
+		<field name="subject" type="String" />
+		<field name="description" type="String" />
+		<field name="examType" type="String" />
+		<field name="totalQuestion" type="int" />
+		<field name="status" type="int" />
+	</model>
+	<model name="com.vietnamobile.model.VnmArticleReportEntry">
+		<field name="vnmArticleReportEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="articleId" type="String" />
+		<field name="version" type="double" />
+		<field name="title" type="String" />
+		<field name="action" type="String" />
+		<field name="status" type="int" />
+	</model>
+	<model name="com.vietnamobile.model.VnmOnlintestReportEntry">
+		<field name="vnmOnlintestReportEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="onlinetestEntryId" type="long" />
+		<field name="questionEntryId" type="long" />
+		<field name="correctTime" type="int" />
+		<field name="wrongTime" type="int" />
+	</model>
+</model-hints>

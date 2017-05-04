@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.vietnamobile.service.OnlinetestEntryLocalService" class="com.vietnamobile.service.impl.OnlinetestEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.OnlinetestEntryService" class="com.vietnamobile.service.impl.OnlinetestEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.OnlinetestEntryPersistence" class="com.vietnamobile.service.persistence.OnlinetestEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.vietnamobile.service.OnlinetestResultEntryLocalService" class="com.vietnamobile.service.impl.OnlinetestResultEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.OnlinetestResultEntryService" class="com.vietnamobile.service.impl.OnlinetestResultEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.OnlinetestResultEntryPersistence" class="com.vietnamobile.service.persistence.OnlinetestResultEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.vietnamobile.service.QuestionEntryLocalService" class="com.vietnamobile.service.impl.QuestionEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.QuestionEntryService" class="com.vietnamobile.service.impl.QuestionEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.QuestionEntryPersistence" class="com.vietnamobile.service.persistence.QuestionEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.vietnamobile.service.SubjectEntryLocalService" class="com.vietnamobile.service.impl.SubjectEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.SubjectEntryService" class="com.vietnamobile.service.impl.SubjectEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.SubjectEntryPersistence" class="com.vietnamobile.service.persistence.SubjectEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.vietnamobile.service.VnmArticleReportEntryLocalService" class="com.vietnamobile.service.impl.VnmArticleReportEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.VnmArticleReportEntryService" class="com.vietnamobile.service.impl.VnmArticleReportEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.VnmArticleReportEntryPersistence" class="com.vietnamobile.service.persistence.VnmArticleReportEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.vietnamobile.service.VnmOnlintestReportEntryLocalService" class="com.vietnamobile.service.impl.VnmOnlintestReportEntryLocalServiceImpl" />
+	<bean id="com.vietnamobile.service.VnmOnlintestReportEntryService" class="com.vietnamobile.service.impl.VnmOnlintestReportEntryServiceImpl" />
+	<bean id="com.vietnamobile.service.persistence.VnmOnlintestReportEntryPersistence" class="com.vietnamobile.service.persistence.VnmOnlintestReportEntryPersistenceImpl" parent="basePersistence" />
+</beans>

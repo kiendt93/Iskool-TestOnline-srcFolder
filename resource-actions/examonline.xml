@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<resource-action-mapping>
+	<portlet-resource>
+	    <portlet-name>exam-online</portlet-name>
+	    <permissions>
+	        <supports>
+	            <action-key>ADD_TO_PAGE</action-key>
+	            <action-key>CONFIGURATION</action-key>
+	            <action-key>VIEW</action-key>
+	        </supports>
+	        <site-member-defaults>
+	            <action-key>VIEW</action-key>
+	        </site-member-defaults>
+	        <guest-defaults>
+	            <action-key>VIEW</action-key>
+	        </guest-defaults>
+	        <guest-unsupported />
+	    </permissions>
+    </portlet-resource>
+    <model-resource>
+    	<model-name>com.vietnamobile.model.OnlinetestResultEntry</model-name>
+    	<portlet-ref>
+    		<portlet-name>exam-online</portlet-name>
+    	</portlet-ref>
+	    <permissions>
+	        <supports>
+	            <action-key>VIEW_RESULT</action-key>
+	        </supports>
+	        	        <site-member-defaults>
+	        </site-member-defaults>
+	        <guest-defaults>
+	        </guest-defaults>
+	        <guest-unsupported />	
+	    </permissions>      	
+    </model-resource>  
+</resource-action-mapping>
